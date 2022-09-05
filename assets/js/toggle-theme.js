@@ -1,5 +1,3 @@
-import $ from "./jquery-selector.mjs";
-
 const $toggleThemeCheckbox
   = $(".toggle-theme > input[type=checkbox]");
 
