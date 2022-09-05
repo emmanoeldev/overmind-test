@@ -1,20 +1,8 @@
-import $ from "./jquery-selector.mjs";
+const openDialog = () => {
+  const $body = $("body");
+  $body.setAttribute("data-dialog", "visibility");
 
-export default class Dialog {
-  constructor() {
-    this._body = $("body");
-    this._dialog = $(".dialog");
-
-    this._setupCloseButton();
-  }
-
-  open() {
-    this._body.setAttribute("data-dialog", "visibility");
-  }
-
-  _setupCloseButton() {
-    this._dialog.lastElementChild.addEventListener("click", () => {
-      this._body.removeAttribute("data-dialog");
-    }, false);
-  }
+  $(".dialog").lastElementChild.addEventListener("click", () => {
+    $body.removeAttribute("data-dialog");
+  }, false);
 }
