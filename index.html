@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <title>Entre em contato com a gente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+<div class="dialog" tabindex="-1" role="dialog">
+  <span class="material-symbols-rounded">
+    task_alt
+  </span>
+  <p role="document">Cadastro enviado para analise</p>
+  <button type="button">Fechar</button>
+</div>
+
+<header class="header">
+  <h1>Tenha acesso a solução completa de Automação Digital para Instituições de
+    Saúde.</h1>
+  <nav class="navigation">
+    <a href="tel:94981099468">
+      <i class="material-symbols-rounded">
+        call
+      </i>
+      <span>(94) 9 8109-9468</span>
+    </a>
+    <a href="mailto:dev.emmanoel@gmail.com">
+      <i class="material-symbols-rounded">mail</i>
+      <span>dev.emmanoel@gmail.com</span>
+    </a>
+    <a href="geo:-6.06778,-49.9019">
+      <i class="material-symbols-rounded">navigation</i>
+      <span>Parauapebas</span>
+    </a>
+  </nav>
+  <div class="toggle-theme">
+    <input type="checkbox" id="switch" name="theme" checked/>
+    <label for="switch" class="material-symbols-rounded">Toggle</label>
+  </div>
+</header>
+
+<form action="mailto:dev.emmanoel@gmail.com" method="post">
+  <div class="text-field">
+    <label for="name">Nome completo</label>
+    <input
+      id="name"
+      type="text"
+      autofocus
+      placeholder="Ex: Emmanoel Mendes">
+    <small>O nome é obrigatório</small>
+  </div>
+
+  <div class="text-field">
+    <label for="email">E-mail</label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Ex: dev.emmanoel@gmail.com">
+    <small>O e-mail deve ser valido</small>
+  </div>
+
+  <div class="text-field">
+    <label for="phone">Telefone</label>
+    <input
+      id="phone"
+      type="tel"
+      placeholder="Ex: (94) 9 8109-9468">
+    <small>O telefone deve ser valido</small>
+  </div>
+
+  <div class="text-field">
+    <label for="password">Senha</label>
+    <input
+      id="password"
+      type="password"
+      placeholder="••••••••">
+    <small>A senha deve ser valida</small>
+  </div>
+
+  <div class="text-field">
+    <label for="password_confirm">Confirme a senha</label>
+    <input
+      id="password_confirm"
+      type="password"
+      placeholder="••••••••">
+    <small>A senhas não podem ser diferentes</small>
+  </div>
+
+  <button type="submit">Criar conta</button>
+</form>
+
+<script type="module" src="./assets/js/main.mjs"></script>
+</body>
+</html>

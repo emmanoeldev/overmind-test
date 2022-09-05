@@ -1,0 +1,26 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  font-size: 0.875rem;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+  color: var(--font-color);
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  margin-block: 0;
+}
+
+button, input {
+  font-family: inherit;
+}

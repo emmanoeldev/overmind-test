@@ -1,0 +1,46 @@
+@import "./theme.css";
+@import "./reset.css";
+@import "./components.css";
+
+/** HEADER **/
+.header {
+  margin-block: 1rem 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--title-color);
+}
+
+/** FORM **/
+form {
+  padding: 2rem;
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-regular);
+  background-color: var(--shape-color);
+}
+
+form > button[type="submit"] {
+  margin-block-start: 0.5rem;
+}
+
+@media screen and (min-width: 34.375rem) {
+  html {
+    font-size: 1rem;
+  }
+
+  body {
+    gap: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: minmax(min-content, 400px) minmax(min-content, 450px);
+  }
+
+  header {
+    margin-block: 0 !important;
+  }
+}

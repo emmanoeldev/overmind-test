@@ -1,0 +1,36 @@
+html {
+  --bg-color: #191a2e;
+  --title-color: #ffffff;
+  --font-color: #ffffff;
+  --icon-color: #484a6a;
+  --link-color: #bebed0;
+  --shape-color: rgba(72, 74, 108, 0.25);
+  --button-color: #aaade8;
+
+  --dialog-color: rgb(72, 74, 108);
+
+  --outline-color: #484a6a;
+  --outline-color-focus: #9294c7;
+  --placeholder-color: #727394;
+
+  --error-color: #c79292;
+  --success-color: #92c7ba;
+
+  --border-radius-regular: 8px;
+}
+
+html[data-theme="light"] {
+  --bg-color: #e2e4ff;
+  --title-color: #191a2e;
+  --icon-color: #484a6a;
+  --link-color: #575a8c;
+  --shape-color: #191a2e;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: background-color 750ms !important;
+  transition-delay: 0ms !important;
+}
